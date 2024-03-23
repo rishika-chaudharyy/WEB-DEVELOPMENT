@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rishit's Website</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* by using style tag */
+        #first{
+            background-color: aquamarine;
+        }
+
+        /* selectors */
+        /* element selector */
+        h1{
+           background-color:blueviolet
+           /* brightness(50%); */
+        }
+
+        /* id selector */
+        #id1{
+            color:beige;
+            border : 2 px solid rgb(194, 194, 221);
+        }
+
+        /* class selector */
+        .first{
+            background-color: aqua;
+        }
+
+        /* multiple selectors */
+        h1,p{
+            color:white;
+        }
+
+        /* element class selector */
+        p.c1{
+            color:red;
+        }
+
+        /* universal selector */
+        *{
+            margin:0;
+            padding:0;
+        }
+
+        .red{
+            background-color : red;
+            color:white;
+        }
+
+        #head{
+            color:black
+        }
+
+        .one , .two{
+            color:blue;
+            background-color: greenyellow;
+        }
+    </style>
+
+    
+</head>
+<body>
+
+    <!-- Demonstrating selectors -->
+    <h1>Different types of selectors</h1>
+    <br>
+    <p>This is an html element</p>
+    <br>
+
+    <span class="first">First span</span>
+    <br>
+    <span id="id1">Second span</span>
+    <br>
+
+
+    <div id="first" class="c1">
+        <h2>This is secondary heading</h2>
+        <br>
+       <p> This is my first container which I will style by style tag.</p>
+    </div>
+    
+    <!-- By using inline css -->
+    <div id="second" class="c2 blue" style="background-color: blueviolet;">
+        <p>This is my second container which I will style by inline css</p>
+    </div>
+
+    <!-- By using external style sheet -->
+    <div id="third" class="c3 pink">
+        <p>This is my third container which I will style by external css</p>
+    </div>
+
+    <div class="red">This is my div with class red</div>
+
+    <h3 id="head">This is my heading with id head</h3>
+
+    <div class="one">
+        <p>Lorem ipsum dolor sit.</p>
+        <pre>Lorem ipsum dolor sit amet.</pre>
+    </div>
+    <div class="two">
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+    </div>
+</body>
+</html>
