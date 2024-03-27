@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rishit's Document</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-color: aquamarine;
+            height: 50vh;
+            align-items: center;
+        }
+
+        .box1 {
+            height: 100px;
+            width: 100px;
+            background-color: chocolate;
+            border: 2px solid black;
+            order: 4;
+        }
+
+        .box2 {
+            height: 100px;
+            /* width:100px; */
+            background-color: rgb(66, 44, 147);
+            border: 2px solid black;
+            align-self: self-end;
+            flex-grow: 4;
+        }
+
+        .box3 {
+            height: 100px;
+            width: 100px;
+            background-color: rgb(112, 22, 102);
+            border: 2px solid black;
+
+        }
+
+        .box4 {
+            height: 100px;
+            width: 100px;
+            background-color: rgb(86, 12, 17);
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box1">box1</div>
+        <div class="box2">box2</div>
+        <div class="box3">box3</div>
+        <div class="box4">box4</div>
+    </div>
+</body>
+
+</html>
