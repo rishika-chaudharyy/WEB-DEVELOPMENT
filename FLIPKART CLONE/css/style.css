@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Noto+Sans+JP:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Noto+Sans+JP:wght@100..900&family=Reddit+Mono:wght@200..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Baloo+Bhai+2:wght@400..800&family=Noto+Sans+JP:wght@100..900&family=Reddit+Mono:wght@200..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Baloo+Bhai+2:wght@400..800&family=Noto+Sans+JP:wght@100..900&family=Oswald:wght@200..700&family=Reddit+Mono:wght@200..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgba(78, 79, 80, 0.89);
+}
+
+header {
+    /* width:100vw; */
+    height: 8vh;
+    background-color: black;
+    color: white;
+    /* border: 2px solid red; */
+    font-family: "Reddit Mono", monospace;
+    font-optical-sizing: auto;
+}
+
+footer {
+    /* width:100vw; */
+    height: 8vh;
+    background-color: black;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 10px;
+
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul {
+    margin-left: 20px;
+}
+
+nav ul {
+    height: 8vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+}
+
+.logo {
+    padding: 10px;
+}
+
+.container {
+    min-height: 84vh;
+    /* display:flex; */
+}
+
+nav ul li a:hover {
+    color: rgb(76, 167, 16);
+    font-weight: bolder;
+}
+
+.searchBar input {
+    height: 4vh;
+    width: 20vw;
+    font-style: oblique;
+    font-weight: bolder;
+    color: black;
+    border-radius: 4px;
+    border-color: black;
+    margin-right: 8px;
+    margin-left: 4px;
+}
+
+.searchBar {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.btn {
+    height: 25px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-style: oblique;
+    color: black;
+    background-color: white;
+    font-weight: bolder;
+    /* border:2px solid blue; */
+    cursor: pointer;
+    margin-right: 50px;
+}
+
+.btn:hover {
+    border: 3px solid white;
+    /* background-color: black; */
+
+    /* text-transform: lowercase; */
+}
+
+.searchBar input:hover {
+    border: 3px solid white;
+}
+
+.items {
+    height: 120px;
+    /* width:100vw; */
+    /* border: 2px solid red; */
+    margin-top: 8px;
+    margin-right: 5px;
+    margin-left: 5px;
+    border-radius: 3px;
+    background-color: white;
+}
+
+.items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2px;
+    padding-right: 10px;
+}
+
+
+.items img {
+    height: 78px;
+}
+
+.items p:hover {
+    font-weight: bolder;
+    color: rgb(9, 78, 55);
+    cursor: pointer;
+}
+
+.items p {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    text-align: center;
+    font-style: italic;
+}
+
+/* .sliderFrame{
+    height:800px;
+    width:1200px;
+    overflow: auto;
+    background-color: white;
+    margin-top:15px;
+    margin-left:5px;
+    margin-right:5px;
+}
+.slider{
+    width:3600px;
+
+    height:800px;
+    position: relative;
+    animation-name: slideimage ;
+    animation-duration: 33s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+
+.imgContainer{
+    height:800px;
+
+}
+
+@keyframes slideimage{
+    0%{
+        left:0px;
+    }
+    10%{
+        left:0px;
+    }
+    20%{
+        left:1200px;
+    }
+    30%{
+        left:1200px;
+    }
+    40%{
+        left:2400px;
+    }
+    50%{
+        left:2400px;
+    }
+    60%{
+        left:1200px;
+    }
+    70%{
+        left:1200px;
+    }
+    80%{
+        left:0px;
+    }
+    90%{
+        left:0px;
+    }
+    100%{
+        left:0px;
+    }
+    
+} */
+
+.add img {
+    margin-top: 8px;
+    height: 25vh;
+    padding-left: 5px;
+    position: relative;
+    /* right:(100vw-10px); */
+}
+
+.add {
+    display: inline-block;
+    /* border:2px solid red; */
+}
+
+.container2 {
+    height: 270px;
+    /* width:100vw; */
+    /* border: 2px solid red; */
+    margin-top: 12px;
+    margin-right: 5px;
+    margin-left: 5px;
+    border-radius: 3px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-image: url(image3slider.webp); */
+
+
+}
+
+.container1 {
+    display: flex;
+    height: 35vh;
+    ;
+    width: 29vh;
+    /* border: 2px solid red; */
+    margin-right: 20px;
+    background-color: bisque;
+    align-items: center;
+    border: 5px solid black;
+}
+
+.container1 img {
+    height: 33vh;
+    ;
+    width: 27vh;
+    cursor: pointer;
+}
+
+.container1:hover {
+    border-color: blueviolet
+}
+
+.container2 p {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-style: italic;
+}
+
+
+.container2 p:hover {
+    color: blueviolet;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+
+.container3 {
+    height: 25vh;
+    width: 35vh;
+    border: 2px solid red;
+    margin-top: 8px;
+    background-color: white;
+    margin-left: 5px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.last {
+    height: 15vh;
+    /* border:2px solid red; */
+    background-color: white;
+    margin-top: 20px;
+    margin-left: 13px;
+    margin-right: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.last input {
+    width: 20vw;
+    /* height:6vw;; */
+    height: 25px;
+    background-color: rgb(213, 107, 20);
+    text-shadow: 0 1px 0 #ffe093;
+    border-radius: 2px;
+}
+
+.last p {
+    font-optical-sizing: auto;
+    font-style: italic;
+    font-weight: bolder;
+    color: black;
+}
+
+.last a {
+    text-decoration: none;
+}
+
+.last input:hover {
+    border: 2px solid black;
+}
