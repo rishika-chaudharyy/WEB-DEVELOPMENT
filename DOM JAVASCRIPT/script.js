@@ -35,3 +35,30 @@ console.log(ptag.tagName);
 ptag.innerHTML = "<b>hello<b>";
 ptag.innerText = "abcs";
 ptag.textContent;
+
+let div = document.querySelector("div");
+console.log(div);
+
+let id = div.getAttribute("id");
+console.log(id);
+
+let parag = document.querySelector("p");
+// console.log(setAttribute("class","myparagraph"))
+
+console.log(div.style);
+
+let el = document.createElement("button");
+el.innerText = "Clickme";
+
+//PRACTICE QUES
+
+let btn = document.createElement("button");
+btn.innerHTML = "<b>Clickme<b>";
+btn.style.color = "white";
+btn.style.backgroundColor = "red";
+
+let body = document.querySelector("body");
+body.prepend(btn);
+
+let p = document.querySelector(".content");
+p.classList.add(newclass);
