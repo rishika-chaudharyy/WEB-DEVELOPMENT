@@ -15,3 +15,9 @@ button{
 .newclass{
     background-color: green;
 }
+
+#div1{
+    height:100px;
+    width:100px;
+    background-color:pink;
+}

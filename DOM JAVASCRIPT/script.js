@@ -62,3 +62,26 @@ body.prepend(btn);
 
 let p = document.querySelector(".content");
 p.classList.add(newclass);
+
+let button=document.querySelector("#btn1");
+button.onclick=()=>{
+    console.log("button was clicked")
+}
+
+let div1=document.querySelector("#div1");
+div1.onmouseover=()=>{
+    console.log("On the div")
+}
+
+let mode=document.querySelector(".mode");
+let curr="light"
+mode.addEventListener("click",()=>{
+    if(curr=="light"){
+        curr="dark";
+        document.querySelector("body").style.backgroundColor="black"
+    }else{
+        curr="light"
+        document.querySelector("body").style.backgroundColor="white"
+    }
+    console.log(curr)
+})
