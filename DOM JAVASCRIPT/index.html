@@ -1,28 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DOM JS</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <h1 id="heading">Let's learn DOM js</h1>
-    <div id="mydiv">
-      <!-- <p class="myclass">Hello</p>
-      <p>This is second paragraph</p>
-      <button class="myclass">Click me!</button>
-      <h2>Hello Javascript</h2>
-      <div class="box">first</div>
-      <div class="box">Second</div> -->
-      <!-- <div class="box">third</div>
-      <p class="myclassp">Hello my name is Rihitu</p>
-      <p class="content">this is para</p> -->
-      <button id="btn1">Click me!!!</button>
-      <button class="mode">Change Mode</button>
-      <div id="div1">Hello</div>
-      <button ondblclick="console.log('Button was clicked');">Click me 2 times!!!</button>
-      <script src="script.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="msg-container  hide">
+        <p id="msg">Winner</p>
+        <button id="newgame">NEW GAME</button>
     </div>
-  </body>
+    <main> 
+        <h1>Tic-Tac-Toe</h1>
+        <div class="container"></div>
+        <div class="game">
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+        </div>
+      </div>
+        </main>
+        <button class="reset">Reset game</button>
+        <script src="tictactoe.js"></script>
+</body>
 </html>
